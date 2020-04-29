@@ -1,0 +1,168 @@
+body {
+  background: url(andy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#what-img {
+  width: 40px;
+  height: 40px;
+  margin-left: 47%;
+  margin-top: 4px; }
+
+.button1, .button2, .button3 {
+  font-size: 28px;
+  font-family: 'Schoolbell', cursive;
+  width: 140px;
+  height: 40px;
+  background-color: #FFD900;
+  text-align: center;
+  padding: 8px 10px;
+  border: 2px solid #1240AB; }
+
+.botonera {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+  .botonera img {
+    width: 100px;
+    height: 100px;
+    margin: 15px; }
+    .botonera img:hover {
+      transform: rotate(350deg); }
+
+#mail {
+  width: 100px;
+  height: 70px; }
+
+#face {
+  width: 80px;
+  height: 80px; }
+
+.button3:active, .button2:active, .button1:active {
+  border: 4px solid #1240AB; }
+
+.letra {
+  color: black;
+  text-align: center;
+  font: bold 35px 'Indie Flower', cursive;
+  text-shadow: 2px 2px 8px white;
+  margin: 20px;
+  animation-name: aparicion;
+  animation-duration: 4s; }
+
+@keyframes aparicion {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1; }
+
+.centro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end; }
+
+ul {
+  background: transparent;
+  font-size: 45px;
+  margin: 20px;
+  position: sticky; }
+  ul li a {
+    color: #FC0E0E;
+    font-family: 'Schoolbell', cursive;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black; }
+    ul li a:hover {
+      color: #FFF718;
+      text-shadow: 2px 2px 8px black; }
+
+.buzz, .toys {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+.marcas {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+  .marcas img {
+    width: 500px;
+    height: 400px; }
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 10px; }
+  .gallery .card {
+    background: white;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 8px; }
+    .gallery .card:hover {
+      animation: sombra 0.2s infinite; }
+    .gallery .card img {
+      width: 200px;
+      height: 200px;
+      align-self: center; }
+    .gallery .card .card-title {
+      color: black;
+      font-size: 25px;
+      font-family: 'Schoolbell', cursive; }
+    .gallery .card .card-text {
+      color: #FC0E0E;
+      font: bold 20px 'Schoolbell', cursive; }
+
+@keyframes sombra {
+  0% {
+    box-shadow: 0px 0px 0px red; }
+  100% {
+    box-shadow: 0px 0px 30px red; } }
+
+.btn-success {
+  text-align: center; }
+
+.jumbotron {
+  background: transparent;
+  font-family: 'Indie Flower', cursive; }
+
+.display-4 {
+  font-size: 70px;
+  text-shadow: 2px 2px 4px black; }
+
+.lead {
+  font-size: 35px; }
+
+@media screen and (max-width: 768px) {
+  .buzz img {
+    width: 100%;
+    height: 600px; }
+  .toys img {
+    width: 100%;
+    height: 600px; }
+  ul {
+    font-size: 25px; }
+  .letra {
+    font-size: 20px; }
+  .jumbotron .display-4 {
+    font-size: 30px; }
+  .jumbotron .lead {
+    font-size: 25px; }
+  .jumbotron .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5px; }
+  .marcas {
+    margin: 10px; }
+    .marcas img {
+      width: 250px;
+      height: 200px; } }
