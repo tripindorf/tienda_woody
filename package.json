@@ -21,7 +21,7 @@
   "author": "Franco D",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.3"
   }
 }
